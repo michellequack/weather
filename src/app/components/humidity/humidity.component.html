@@ -1,0 +1,18 @@
+<div fxLayout="row">
+  <div fxLayoutGap class="label">
+    <span>{{ humidity | number: '1.0-0' }}</span>
+    <span class="unit">%</span>
+  </div>
+  <div fxLayoutGap>
+    <radial-gauge 
+      width="225" 
+      height="225" 
+      [attr.value]="humidity"
+      value-box="false"
+      color-plate="#DEEDFC" 
+      color-plate-end="#B4D1EE"
+      highlights='[{ "from": 30, "to": 50, "color": "rgba(38, 59, 119, .5)" }]'
+    ></radial-gauge>
+  </div>
+</div>
+

@@ -1,0 +1,43 @@
+<div fxLayout="row">
+  <div fxLayoutGap class="label">
+    <span>{{ temperature | number: '1.0-0' }}</span>
+    <div class="unit">&#176;</div>
+  </div>
+  <div fxLayoutGap>
+    <linear-gauge 
+      width="150" 
+      height="225" 
+      [attr.min-value]="minValue" 
+      [attr.max-value]="maxValue"
+      [attr.major-ticks]="majorTicks" 
+      minor-ticks="none" 
+      stroke-ticks="true" 
+      ticks-width="15"
+      ticks-width-minor="7.5" 
+      [attr.highlights]="highlights"
+      color-plate="#DEEDFC" 
+      color-plate-end="#B4D1EE"
+      border-shadow-width="0" 
+      borders="true" 
+      border-radius="20"
+      needle-type="arrow" 
+      needle-width="7"
+      animation-duration="250" 
+      animation-rule="linear" 
+      animated-value="true" 
+      color-needle="#333"
+      color-needle-end="#333"
+      [attr.color-bar-progress]="barColor" 
+      color-bar="#FFFFFF" 
+      bar-stroke="0" 
+      bar-width="8" 
+      bar-begin-circle="false"
+      [attr.value]="temperature"
+      value-box="false"
+      number-side="left"
+      tick-side="both"
+      needle-side="both"
+    >
+    </linear-gauge>
+  </div>
+</div>

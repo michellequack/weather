@@ -1,0 +1,15 @@
+<div height="132" fxLayout="row">
+  <div fxLayoutGap class="rain-group">
+    <div> 
+      <span class="label">{{ dayRainTotal | number: '1.1-1' }}</span>
+      <span class="unit">" today</span>
+    </div>
+    <div>
+      <span class="label">{{ rainRate | number: '1.1-1' }}</span>
+      <span class="unit">"/hr</span>
+    </div>
+  </div>
+  <div fxLayoutGap>
+    <img src="../../../assets/img/rain.png">
+  </div>
+</div>
