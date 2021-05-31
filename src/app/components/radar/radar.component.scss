@@ -1,0 +1,18 @@
+.outer-container {
+  border-style: solid;
+  border-color: #C1C1C1;
+  border-width: 3px;
+  border-radius: 0px;
+  height: 410px;
+  background-color: #F0F0F0;
+}
+
+.inner-container {
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: -2px;
+  height: 100%;
+  width: calc(100% - 8px);
+  border-radius: 0px;
+}

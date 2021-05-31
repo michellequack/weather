@@ -1,13 +1,47 @@
 <div fxLayout="row">
-  <div fxFlex="25" fxLayoutGap="20px grid"><app-temperature></app-temperature></div>
-  <div fxFlex="25" fxLayoutGap="20px grid"><app-humidity></app-humidity></div>
+  <!--- Left half --->
+  <div fxFlex="50" class="left-half">
+    <div fxLayout="row">
+      <div fxFlex="50" fxLayoutGap="20px grid">
+        <app-temperature></app-temperature>
+      </div>
+      <div fxFlex="50" fxLayoutGap="20px grid">
+        <app-humidity></app-humidity>
+      </div>
+    </div>
+    <div fxLayout="row" class="spacer"></div>
+    <div fxLayout="row">
+      <div fxFlex="50" fxLayoutGap="20px grid">
+        <app-wind></app-wind>
+      </div>
+      <div fxFlex="50" fxLayoutGap="20px grid">
+        <app-rain></app-rain>
+      </div>
+    </div>
+    <div fxLayout="row" class="spacer"></div>
+    <div fxLayout="row">
+      <div fxFill>
+        <app-celestial></app-celestial>
+      </div>
+    </div>
+  </div>
+  <!--- Right half --->
+  <div fxFlex="50" fxLayoutGap="20px grid">
+    <div fxLayout="row">
+      <div fxFill>
+        <app-radar></app-radar>
+      </div>
+    </div>
+    <div fxLayout="row">
+      <div fxFill>
+        <app-barometer></app-barometer>
+      </div>
+    </div>
+  </div>
+</div>
+<div fxLayout="row">
+  <div fxFill>
+    forecast
+  </div>
 </div>
 
-<div fxLayout="row">
-  <div fxFlex="25" fxLayoutGap="20px grid">
-    <app-wind></app-wind>
-  </div>
-  <div fxFlex="25" fxLayoutGap="20px grid">
-    <app-rain></app-rain>
-  </div>
-</div>

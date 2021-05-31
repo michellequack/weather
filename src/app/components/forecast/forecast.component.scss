@@ -1,0 +1,26 @@
+.outer-container {
+  border-style: solid;
+  border-color: #C1C1C1;
+  border-width: 3px;
+  border-radius: 20px;
+  height: 255px;
+  background-color: #F0F0F0;
+}
+
+.plate {
+  margin-top: 2px;
+  margin-left: 3px;
+  margin-bottom: 10px;
+  height: 250px;
+  width: calc(100% - 6px);
+  border-radius: 16px;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(194,218,243,1) 100%, rgba(210,210,210,1) 100%);
+}
+
+.inner-container {
+  margin: 3px;
+  height: 240px;
+  width: 100%;
+  border-radius: 20px;
+}

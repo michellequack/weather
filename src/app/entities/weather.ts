@@ -11,11 +11,18 @@ export class Weather {
   public sunrise: string = "";
   public sunset: string = "";
   public moonPhase: string = "";
-  public moonPercent: string = "";
-  public barometer: Barometer[] = new Array;
+  public moonPercent: number = 0;
+  public barometer: [] = [];
+  public barometerSeriesArray: BarometerSeries[] = new Array;
 }
 
-export class Barometer {
-  public timeEpoch: number = 0;
-  public pressure: number = 0;
+export class BarometerSeries {
+  public name: string = "";
+
+  public series: BarometerSeriesItem[] = new Array;
+}
+
+export class BarometerSeriesItem {
+  public name: string = "";
+  public value: number = 0;
 }

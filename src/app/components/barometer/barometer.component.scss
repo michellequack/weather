@@ -1,0 +1,49 @@
+.ngx-charts {
+  text {
+    fill: #1D3F72;
+  }
+
+  .gridline-path {
+    stroke: #1D3F72;
+  }
+}
+
+.barometer-row {
+  height: 250px;
+  margin-top: 10px;
+}
+
+.outer-container {
+  border-style: solid;
+  border-color: #C1C1C1;
+  border-width: 3px;
+  border-radius: 20px;
+  height: 255px;
+  background-color: #F0F0F0;
+}
+
+.plate {
+  margin-top: 2px;
+  margin-left: 3px;
+  margin-bottom: 10px;
+  height: 250px;
+  width: calc(100% - 6px);
+  border-radius: 16px;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(194,218,243,1) 100%, rgba(210,210,210,1) 100%);
+}
+
+.inner-container {
+  margin: 3px;
+  height: 240px;
+  width: 100%;
+  border-radius: 20px;
+  font-family: RobotoDraft,Roboto,"Helvetica Neue, Helvetica, Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

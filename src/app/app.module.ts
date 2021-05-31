@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { GaugesModule } from '@biacsics/ng-canvas-gauges';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,7 +35,9 @@ import { ForecastComponent } from './components/forecast/forecast.component';
     AppRoutingModule,
     HttpClientModule,
     FlexLayoutModule,
-    GaugesModule
+    GaugesModule,
+    NgxChartsModule,
+    BrowserAnimationsModule 
   ],
   providers: [CurrentWeatherService],
   bootstrap: [AppComponent]

@@ -1,1 +1,33 @@
-<p>celestial works!</p>
+<div fxLayout="row">
+  <div fxFill fxLayout="row">
+    <div fxFlex="none">
+      <div fxLayout="row" class="sun-times">
+        <span class="label">Sunrise: {{sunrise}} </span>
+      </div>
+      <div fxLayout="row">
+        <span class="label">Sunset: &nbsp;{{sunset}}</span>
+      </div>
+    </div>
+    <div fxFlex>
+      <img src="../../../assets/img/sunrise.png">
+    </div>
+  </div>
+</div>
+
+<div fxLayout="row" class="moon-row">
+  <div fxFill fxLayout="row">
+    <div fxFlex="none">
+      <div fxLayout="row" class="sun-times">
+        <span class="label">{{moonPhase}} </span>
+      </div>
+      <div fxLayout="row">
+        <span class="label">{{moonPercent}}% full</span>
+      </div>
+    </div>
+    <div fxFlex>
+      <img [src]="moonImage">
+    </div>
+  </div>
+</div>
+
+

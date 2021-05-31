@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { CurrentWeatherService } from './services/current-weather.service';
 
 @Component({
@@ -8,9 +7,8 @@ import { CurrentWeatherService } from './services/current-weather.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public url = "assets/weather.html";
 
-  constructor(public sanitizer: DomSanitizer,
+  constructor(
     public currentWeatherService: CurrentWeatherService) {
       this.currentWeatherService.getCurrentWeather();
   }
