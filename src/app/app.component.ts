@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CurrentWeatherService } from './services/current-weather.service';
+import { ForecastService } from './services/forecast.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,9 @@ import { CurrentWeatherService } from './services/current-weather.service';
 export class AppComponent {
 
   constructor(
-    public currentWeatherService: CurrentWeatherService) {
+    public currentWeatherService: CurrentWeatherService,
+    public forecastService: ForecastService) {
       this.currentWeatherService.getCurrentWeather();
+      this.forecastService.getCurrentForecast();
   }
 }

@@ -1,1 +1,7 @@
-<p>forecast works!</p>
+<img src="../../../assets/img/forecast/day/rain_showers.png">
+        <div *ngFor="let day of forecast">
+          <div>{{day.dayName}}</div>
+          <div><img [src]="day.icon"></div>
+          <div>{{day.forecastString}}</div>
+          <div>{{day.popChance}}</div>
+        </div>

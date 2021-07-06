@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ForecastService } from '../../services/forecast.service';
+import { DayInfo } from '../../entities/forecast';
 
 @Component({
   selector: 'app-forecast',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForecastComponent implements OnInit {
 
-  constructor() { }
+  public forecast = [];
+  constructor(private forecastService: ForecastService) { }
 
   ngOnInit(): void {
+    this.forecastService.forecast.subscribe((foreCastInfo) => {
+      this.forecast = foreCastInfo;
+    });
   }
 
 }

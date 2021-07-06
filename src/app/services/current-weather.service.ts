@@ -13,8 +13,11 @@ export class CurrentWeatherService {
   constructor(private httpClient: HttpClient) { }
 
   public getCurrentWeather() {
+
     const url = 'http://localhost:3000/current_weather';
+    
     this.httpClient.get(url, { responseType: 'text' }).subscribe((response) => {
+      
       const weather: Weather = JSON.parse(response.toString());
 
       weather.barometerSeriesArray = new Array;
